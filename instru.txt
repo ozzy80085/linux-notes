@@ -1,0 +1,5 @@
+apt install apache2
+to restart sudo service apache2 restart
+
+index.html file goes in /var/www/html
+
