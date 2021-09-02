@@ -1,5 +1,22 @@
+web server:
 apt install apache2
 to restart sudo service apache2 restart
 
 index.html file goes in /var/www/html
 
+
+
+tor server;
+sudo apt install tor
+
+sudo nano /etc/tor/torrc
+
+comment out 
+#HiddenServiceDir /var/lib/tor/hidden_service/
+#HiddenServicePort 80 127.0.0.1:80
+
+then restart service
+sudo service restart
+
+get hostname with 
+sudo cat /var/lib/tor/hidden_service/hostname
