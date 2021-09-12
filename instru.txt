@@ -6,7 +6,7 @@ index.html file goes in /var/www/html
 
 
 
-tor server;
+tor server:
 sudo apt install tor
 
 sudo nano /etc/tor/torrc
