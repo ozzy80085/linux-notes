@@ -20,3 +20,8 @@ sudo service restart
 
 get hostname with 
 sudo cat /var/lib/tor/hidden_service/hostname
+
+
+if you want to change to a custom hostname:
+https://www.jamieweb.net/blog/onionv3-vanity-address/
+
