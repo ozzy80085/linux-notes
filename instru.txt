@@ -4,7 +4,12 @@ to restart sudo service apache2 restart
 
 index.html file goes in /var/www/html
 
-
+to change port and/or ip address
+/etc/apache2/ports.conf
+change the Listen line
+to change ip put ip in front of port
+example: 
+Listen 127.0.0.1:80
 
 tor server:
 sudo apt install tor
