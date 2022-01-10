@@ -1,0 +1,5 @@
+make new user (-m adds a folder to /home if the user was bob it would make a folder in /home/bob/): 
+sudo useradd -m username
+
+to add user to sudoers file:
+usermod -aG sudo username
