@@ -1,0 +1,15 @@
+docker pull "os" ex: docker pull debian
+
+docker run -d -t --name "container name" "os name" ex: docker run -d -t --name test debian
+
+docker ps to see running docker containers
+
+
+docker exec -it "container name" bash ex: docker exec -it test bash
+
+
+exit to leave container
+
+
+docker kill "container name"
+docker rm "container name"
