@@ -1,0 +1,11 @@
+edit out redirect line
+nano /etc/apache2/sites-enabled/000-default.conf
+
+this line makes a permanent redirect to never gonna give you up 
+Redirect 301 / https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+i think that it being permanent means even if you remove the redirect line then it will still redirect you have to clear the cache to
+not be redirected i think that if its just: 
+Redirect / https://www.youtube.com/watch?v=dQw4w9WgXcQ
+then it makes a temporary redirect and you dont have to clear the cache to not be directed
+if that doesnt work then use 307
