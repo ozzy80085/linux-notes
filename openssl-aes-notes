@@ -1,0 +1,10 @@
+encrypt:
+openssl enc -aes-256-cbc -in plaintext.txt -base64 -md sha1 -out enrypted.aes
+// you will be prompted for a encryption password
+
+
+decrypt:
+openssl aes-256-cbc -d -in encrypted.aes -base64 -md sha1 -out plaintext.txt
+// you will be prompted for a decryption password
+
+(yes im aware sha1 is insecure)
