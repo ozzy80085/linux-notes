@@ -118,6 +118,54 @@ hello world:
         return 0;
     }
 
+## user input
+
+    // Create an integer variable that will store the numbe get from the user  
+	int myNum;  
+  
+	// Ask the user to type a number  
+	printf("Type a number: \n");  
+  
+	// Get and save the number the user types  
+	scanf("%d", &myNum);  
+  
+	// Output the number the user typed  
+	printf("Your number is: %d", myNum);
+
+a string is a little bit different
+
+	// Create a string  
+	char firstName[30];  
+  
+	// Ask the user to input some text  
+	printf("Enter your first name: \n");  
+  
+	// Get and save the text  
+	scanf("%s", firstName);  
+  
+	// Output the text  
+	printf("Hello %s.", firstName);
+Note that you must specify the size of the string/array (we used a very high number, 30, but atleast then we are certain it will store enough characters for the first name).
+
+## memory addresses
+
+    int myAge = 43;  
+	printf("%p", &myAge); // Outputs 0x7ffe5367e044
+your memory address will be different
+
+## pointers
+
+    int myAge = 43; // An int variable  
+	int* ptr =  &myAge;  // A pointer variable, with the name ptr, that stores the address of myAge  
+  
+	// Output the value of myAge (43)  
+	printf("%d\n", myAge);  
+  
+	// Output the memory address of myAge (0x7ffe5367e044)  
+	printf("%p\n", &myAge);  
+  
+	// Output the memory address of myAge with the pointer (0x7ffe5367e044)  
+	printf("%p\n", ptr);
 
 # faq:
 ## why is the second word of a variable capitalized?
