@@ -1,0 +1,42 @@
+ALL COMMANDS HAVE TO END WITH A SEMICOLON!!
+
+//show available databases
+show databases;
+
+// create database called test
+create database test;
+
+//use database called test 
+use test; 
+
+//show tabled in database 
+show tables;
+
+//create a table called user which has id and name 
+create table users(id int not null auto_increment primary key, name varchar(30) not null);
+
+//show properties of users table
+describe users;
+
+
+//view contents of table
+select * from users;
+
+//put data into table users
+insert into users(id, name) value(29392902, 'Paul');
+
+//change id of Paul to 1
+update users set id = 1 where name = 'Paul';
+
+//show only name of table users
+select name from users;
+
+//show only users with id over 10
+select name, id from users where id > 10;
+
+//show user with id of 23  
+select name, id from users where id = 23;
+
+
+//delete user with id of 12
+delete from users where id = 12;
