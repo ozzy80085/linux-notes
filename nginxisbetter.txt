@@ -50,4 +50,6 @@ for example adding this to /etc/nginx/sites-available/default redirects anyone w
 
 rewrite ^/rick$ https://www.youtube.com/watch?v=xvFZjo5PgG0;
 
+you can also make permanent redirection with:
+rewrite ^/oldlocation$ http://www.newdomain.com/newlocation permanent;
 
