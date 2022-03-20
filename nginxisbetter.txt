@@ -43,3 +43,11 @@ server {
                 try_files $uri $uri/ =404;
         }
 }
+
+
+you can also make redirections in nginx
+for example adding this to /etc/nginx/sites-available/default redirects anyone who goes to yourdomain.com/rick to https://www.youtube.com/watch?v=xvFZjo5PgG0
+
+rewrite ^/rick$ https://www.youtube.com/watch?v=xvFZjo5PgG0;
+
+
