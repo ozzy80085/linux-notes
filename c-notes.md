@@ -154,6 +154,7 @@ Note that you must specify the size of the string/array (we used a very high num
 your memory address will be different
 
 ## pointers
+a pointer is a variable whose value is the address of another variable
 
     int myAge = 43; // An int variable  
 	int* ptr =  &myAge;  // A pointer variable, with the name ptr, that stores the address of myAge  
