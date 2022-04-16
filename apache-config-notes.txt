@@ -11,6 +11,10 @@ then it makes a temporary redirect and you dont have to clear the cache to not b
 if that doesnt work then use 307
 
 
+enable ssl and rewrite engine:
+a2enmod ssl
+a2enmod rewrite
+
 example https config:
 
 <VirtualHost *:80>
