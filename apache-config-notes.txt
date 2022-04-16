@@ -9,3 +9,26 @@ not be redirected i think that if its just:
 Redirect / https://www.youtube.com/watch?v=dQw4w9WgXcQ
 then it makes a temporary redirect and you dont have to clear the cache to not be directed
 if that doesnt work then use 307
+
+
+example https config:
+
+<VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html
+        ErrorLog /dev/null
+        CustomLog /var/log/apache2/http/access.log combined
+        Redirect /a https://www.youtube.com/watch?v=dQw4w9WgXcQ
+</VirtualHost>
+
+<VirtualHost *:443>
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html
+        ErrorLog /dev/null
+        CustomLog /var/log/apache2/https/access.log combined
+        SSLEngine                on
+        SSLCertificateFile       /etc/apache2/keys/certificate.crt
+        SSLCertificateKeyFile    /etc/apache2/keys/private.key
+        SSLCertificateChainFile  /etc/apache2/keys/ca_bundle.crt
+        Redirect /a https://www.youtube.com/watch?v=dQw4w9WgXcQ
+</VirtualHost>
