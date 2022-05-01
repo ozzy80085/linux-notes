@@ -30,3 +30,5 @@ sudo cat /var/lib/tor/hidden_service/hostname
 if you want to change to a custom hostname:
 https://www.jamieweb.net/blog/onionv3-vanity-address/
 
+when you put the keys in the directory its important to give the files proper permissions with: sudo chown debian-tor filehere
+
